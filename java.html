@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	/* Первый вопрос */
+		.test1{
+			width: 1200px;
+			height: 900px;
+			background-color: red;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.img1{
+			width: 800px;
+			height: 500px;
+			background-color: blue;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.img_verst1{
+			width: 800px;
+			height: 500px;
+		}
+
+		.question1{
+			width: 800px;
+			height: 100px;
+			background-color: yellow;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 20px;
+		}
+
+		.pt_15{
+			padding-top: 15px;
+		}
+
+		.pt_25{
+			padding-top: 25px;
+		}
+
+		.answer1{
+			width: 800px;
+			height: 50px;
+			background-color: green;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 50px;
+		}
+
+		.answer2{
+			width: 800px;
+			height: 50px;
+			background-color: green;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 20px;
+		}
+
+		.answer3{
+			width: 800px;
+			height: 50px;
+			background-color: green;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 20px;
+		}
+
+
+	/*Второй вопрос*/
+		.test2{
+			width: 1200px;
+			height: 900px;
+			background-color: red;
+			margin-left: auto;
+			margin-right: auto;
+			display: none;
+		}
+
+		.question2{
+			width: 800px;
+			height: 100px;
+			background-color: yellow;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 20px;
+		}
+
+		.answer4{
+			width: 800px;
+			height: 50px;
+			background-color: green;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 50px;
+		}
+
+		.answer5{
+			width: 800px;
+			height: 50px;
+			background-color: green;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 20px;
+		}
+
+		.answer6{
+			width: 800px;
+			height: 50px;
+			background-color: green;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 20px;
+		}
+
+	/*Третий вопрос*/
+		.test3{
+			width: 1200px;
+			height: 900px;
+			background-color: red;
+			margin-left: auto;
+			margin-right: auto;
+			display: none;
+		}
+
+		.question3{
+			width: 800px;
+			height: 100px;
+			background-color: yellow;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 20px;
+		}
+
+		.answer7{
+			width: 800px;
+			height: 50px;
+			background-color: green;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 50px;
+		}
+
+		.answer8{
+			width: 800px;
+			height: 50px;
+			background-color: green;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 20px;
+			}
+
+		.answer9{
+			width: 800px;
+			height: 50px;
+			background-color: green;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="test1">
+		<div class="img1">
+			<img src="pekines.jpg" class="img_verst1">
+		</div>
+		<div class="question1">
+			<h1 class="pt_25">
+				Какая порода у этой собаки?
+			</h1>
+		</div>
+		<div class="answer1">
+			<p class="pt_15">
+				Японский хин
+			</p>
+		</div>
+		<div class="answer2">
+			<p class="pt_15">
+				Пекинес
+			</p>
+		</div>
+		<div class="answer3">
+			<p class="pt_15">
+				Тибетский Спаниель
+			</p>
+		</div>
+	</div>
+	<div class="test2">
+		<div class="img1">
+			<img src="pekines.jpg" class="img_verst1">
+		</div>
+		<div class="question2">
+			<h1 class="pt_25">
+				Второй вопрос
+			</h1>
+		</div>
+		<div class="answer4">
+			<p class="pt_15">
+				первый ответ
+			</p>
+		</div>
+		<div class="answer5">
+			<p class="pt_15">
+				второй ответ
+			</p>
+		</div>
+		<div class="answer6">
+			<p class="pt_15">
+				третий вопрос
+			</p>
+		</div>
+	</div>
+	<div class="test3">
+		<div class="img1">
+			<img src="pekines.jpg" class="img_verst1">
+		</div>
+		<div class="question3">
+			<h1 class="pt_25">
+				третий вопрос
+			</h1>
+		</div>
+		<div class="answer7">
+			<p class="pt_15">
+				первый ответ
+			</p>
+		</div>
+		<div class="answer8">
+			<p class="pt_15">
+				второй ответ
+			</p>
+		</div>
+		<div class="answer9">
+			<p class="pt_15">
+				третий ответ
+			</p>
+		</div>
+	</div>
+	<script type="text/javascript">
+		document.querySelector(".answer1").onclick = function(){
+			alert("Неправильный ответ!")
+		}
+		document.querySelector(".answer2").onclick = function(){
+			alert("Правильный ответ!")
+			document.querySelector(".test2").style.display = "block";
+			document.querySelector(".test1").style.display = "none";
+		}
+		document.querySelector(".answer3").onclick = function(){
+			alert("Неправильный ответ!")
+		}
+
+		document.querySelector(".answer4").onclick = function(){
+			alert("Правильный ответ!")
+			document.querySelector(".test3").style.display = "block";
+			document.querySelector(".test2").style.display = "none";
+		}
+		document.querySelector(".answer5").onclick = function(){
+			alert("Неравильный ответ!")
+			
+		}
+		document.querySelector(".answer6").onclick = function(){
+			alert("Неправильный ответ!")
+		}
+
+		document.querySelector(".answer7").onclick = function(){
+			alert("Неравильный ответ!")
+			
+		}
+		document.querySelector(".answer8").onclick = function(){
+			alert("Неравильный ответ!")
+			
+		}
+		document.querySelector(".answer9").onclick = function(){
+			alert("Правильный ответ!")
+		document.querySelector(".test3").style.display = "none";
+		}
+	</script>
+</body>
+</html>
